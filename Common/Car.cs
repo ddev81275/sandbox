@@ -4,6 +4,8 @@
     {
         internal Car() { }
         internal Car(string name) { Console.WriteLine(name); }
+
+        internal void StartEngine() { Console.WriteLine("............."); }
     }
 
     internal class Nissan : Car
@@ -34,4 +36,6 @@
         internal Fiat() : base() { }
         internal Fiat(string name) : base(name) { }
     }
+
+    internal class BMW : Car { }
 }
