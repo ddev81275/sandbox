@@ -11,6 +11,7 @@
     }
     public class AllMight : Hero
     {
+        public virtual decimal Height { get; set; }
         public override void Kick()
         {
             Console.WriteLine("One 2 All");
@@ -20,10 +21,16 @@
 
     public class Deku : AllMight
     {
+        public sealed override decimal Height { get; set; }
         public override void Kick()
         {
             base.Kick();
         }
+    }
+
+    public class Juniour : AllMight
+    {
+        public Juniour() : base() { }
     }
 
 }
