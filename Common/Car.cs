@@ -2,7 +2,7 @@
 {
     internal class Car
     {
-        internal Car() { Console.WriteLine("car"); }
+        internal Car() { }
         internal Car(string name) { Console.WriteLine(name); }
     }
 

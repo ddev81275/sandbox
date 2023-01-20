@@ -1,14 +1,8 @@
 ﻿using sandbox.Common;
 
-var dog = new Dog();
-var cat = new Cat();
+var hero = new Hero();
+var car = new Car();
+var isType = car is Hero;
 
-Hero hero = new Hero();
-hero.Kick();
-
-Hero heroNumber1 = new AllMight();
-heroNumber1.Kick();
-
-Hero juniour = new Juniour();
-juniour.Name = "";
-juniour.Kick();
+Console.WriteLine(isType);
+Console.WriteLine(car is null);
