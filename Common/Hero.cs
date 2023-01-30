@@ -1,36 +1,23 @@
-﻿namespace sandbox.Common
-{
-    public class Hero
-    {
-        public string Name { get; set; }
-
-        public virtual void Kick()
-        {
+﻿namespace sandbox.Common {
+    public class Hero {
+        public void Kick() {
             Console.WriteLine("Bang-bang");
         }
     }
-    public class AllMight : Hero
-    {
-        public virtual decimal Height { get; set; }
-        public override void Kick()
-        {
+    public class AllMight : Hero {
+        new public void Kick() {
             Console.WriteLine("One 2 All");
-            //base.Kick();
+        }
+
+        public virtual void Jump() {
+            Console.WriteLine("Jump as AllMight");
         }
     }
 
-    public class Deku : AllMight
-    {
-        public sealed override decimal Height { get; set; }
-        public override void Kick()
-        {
-            base.Kick();
+    public class Deku : AllMight {
+        public override void Jump() {
+            base.Jump();
+            Console.WriteLine("Jump as Deku");
         }
     }
-
-    public class Juniour : AllMight
-    {
-        public Juniour() : base() { }
-    }
-
 }
