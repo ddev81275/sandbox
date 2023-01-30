@@ -1,15 +1,11 @@
 ﻿using sandbox.Common;
 
-var car = new Car();
-var nissanV2 = new Nissan();
-var bmw = new BMW();
+string name = "All Might";
+name = "Deku";
+Console.WriteLine(name);
 
-Nissan? nissan = car as Nissan;
-Fiat? fiat = car as Fiat;
-Stellantis? stellantis = car as Stellantis;
-
-Console.WriteLine(car is Nissan);
-Console.WriteLine(car is Fiat);
-Console.WriteLine(car is Stellantis);
-Console.WriteLine(nissanV2 is Car);
-Console.WriteLine(car is BMW);
+Animal animal= new Animal();
+animal.Breath();
+Cat cat = new Cat();
+cat.Breath();
+cat.Move();
