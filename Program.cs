@@ -43,7 +43,7 @@ using sandbox.Cast;
 //Console.WriteLine(employee is Employee);
 
 Employee employee = new Employee();
-Manager manager = employee as Manager;
+//Manager manager = (Manager)employee;
+//Manager manager = employee as Manager;
 
-Console.WriteLine(employee);
-Console.WriteLine(manager);
+Console.WriteLine(employee is Manager);
