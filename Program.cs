@@ -1,49 +1,21 @@
-﻿//using sandbox.Common;
+﻿using sandbox.Cast;
 
-//string name = "All Might";
-//name = "Deku";
-//Console.WriteLine(name);
+////Manager manager= new Manager();
+////Employee employee = manager as Employee;
 
-//Animal animal= new Animal();
-//animal.Breath();
-//Cat cat = new Cat();
-//cat.Breath();
-//cat.Move();
+//Employee employee = new Employee();
+//var isManager = employee is Manager;
+////Manager? manager = employee as Manager;
 
-//using sandbox.Common;
+////Console.WriteLine(employee);
+////Console.WriteLine(manager);
+//Console.WriteLine(isManager);
 
-//Hero hero = new Hero();
-//hero.Kick();
+Director director= new Director();
+var employee = director as Employee;
 
-//AllMight allMight = new AllMight();
-//allMight.Kick();
+Console.WriteLine(employee);
 
-//Deku Deku = new Deku();
-//Deku.Kick();
-//Deku.Jump();
-
-
-//using Modificators.Bank;
-
-//Account TomAc = new Account();
-//Account JhonAc = new Account();
-
-//var id = Docs.ID;
-//var id2 = Docs.ID;
-
-//Console.WriteLine($"{id} {id2}");
-
-using sandbox.Cast;
-
-//Manager manager = new Manager();
-//Employee employee = manager as Employee;
-
-//Console.WriteLine(manager is Manager);
-//Console.WriteLine(employee is Manager);
-//Console.WriteLine(employee is Employee);
-
-Employee employee = new Employee();
-//Manager manager = (Manager)employee;
-//Manager manager = employee as Manager;
-
-Console.WriteLine(employee is Manager);
+var emp = new Employee();
+Director? dir = emp as Director;
+Console.WriteLine(dir);

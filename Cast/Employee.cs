@@ -8,4 +8,8 @@
     internal class Manager : Employee {
         internal decimal? Height { get; set; }
     }
+
+    internal class Director : Employee {
+        internal int WorkExperience { get; set; }
+    }
 }
