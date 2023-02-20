@@ -5,7 +5,9 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sandbox", "sandbox.csproj", "{0F36512F-BB61-4FFD-B831-5765E8D60852}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modificators", "Modificators\Modificators.csproj", "{C52DE035-4C2B-4BA0-B9D2-DCB69E014B28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modificators", "Modificators\Modificators.csproj", "{C52DE035-4C2B-4BA0-B9D2-DCB69E014B28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yield_test", "yield_test\yield_test.csproj", "{05ADB6DC-748F-43D6-A6CB-04F3183717EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{C52DE035-4C2B-4BA0-B9D2-DCB69E014B28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C52DE035-4C2B-4BA0-B9D2-DCB69E014B28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C52DE035-4C2B-4BA0-B9D2-DCB69E014B28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05ADB6DC-748F-43D6-A6CB-04F3183717EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05ADB6DC-748F-43D6-A6CB-04F3183717EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05ADB6DC-748F-43D6-A6CB-04F3183717EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05ADB6DC-748F-43D6-A6CB-04F3183717EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
