@@ -9,6 +9,13 @@ var cars = from item in values
            orderby item.Length ascending  //kia, toyota
            select item;
 
-foreach (var item in cars) {
-    Console.Write(item + " ");
+//foreach (var item in cars) {
+//    Console.Write(item + " ");
+//}
+
+var _ = from item in values
+        group item by item.Length;
+
+foreach (var item in _) {
+    Console.WriteLine(item.Key);
 }
