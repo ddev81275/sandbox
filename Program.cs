@@ -1,11 +1,14 @@
-﻿using yield_test;
+﻿using LINQ;
 
-var _base = new NewOverride();
-var one = new DeliveredOne();
-var two = new DeliveredTwo();
+LINQ_query _linq = new LINQ_query();
+var values = _linq.Collection4LINQ;
 
-NewOverride _one = new DeliveredOne();
+var cars = from item in values
+           where item.ToLower() != "nissan" && item.ToLower() != "bmw" //exclude nissan, bmw. 
+           //orderby item.Length descending   //toyota, kia
+           orderby item.Length ascending  //kia, toyota
+           select item;
 
-_base.Say();
-one.Say();
-two.Say();
+foreach (var item in cars) {
+    Console.Write(item + " ");
+}

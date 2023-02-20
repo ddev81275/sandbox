@@ -18,6 +18,6 @@
     public class DeliveredTwo : NewOverride {
         public new void Say() {
             Console.WriteLine("Hide base method");
-        }
+        } 
     }
 }
