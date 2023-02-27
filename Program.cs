@@ -1,8 +1,12 @@
 ﻿using Modificators;
 
-Base _base = new Base();
-Delivered _delivered= new Delivered();
+Delivered delivered = new Delivered();
+Base _b = new Base();   
 
-_base.Print();
-_delivered.Print();
-_delivered.Print();
+var _base = (Base)delivered;
+var _d = (Delivered)_b;
+//var _d = _b as Delivered;
+
+
+Console.WriteLine($"{_b} {_b is Base}");
+Console.WriteLine($"{_d} {_d is Delivered}");
