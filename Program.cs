@@ -15,5 +15,3 @@ IDoable id = new D();
 
 Console.WriteLine(d is IDoable);
 Console.WriteLine(b is IDoable);
-
-Console.WriteLine(id is Base);
