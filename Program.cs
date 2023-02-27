@@ -1,12 +1,11 @@
 ﻿using Modificators;
 
-Delivered delivered = new Delivered();
-Base _b = new Base();   
+Base _base = new Base();
+Base _b = new Base(100);
 
-var _base = (Base)delivered;
-var _d = (Delivered)_b;
-//var _d = _b as Delivered;
+Console.WriteLine($"Name: {_base.Name}");
+Console.WriteLine($"Second Name: {_base.SecondName}");
+Console.WriteLine($"Age: {_base.Age}");
+Console.WriteLine($"const: {Base._const}");
 
-
-Console.WriteLine($"{_b} {_b is Base}");
-Console.WriteLine($"{_d} {_d is Delivered}");
+Console.WriteLine(new Base(1000).Age);
