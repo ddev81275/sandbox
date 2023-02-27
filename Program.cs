@@ -1,11 +1,19 @@
 ﻿using Modificators;
+using Modificators.Interface;
 
-Base _base = new Base();
-Base _b = new Base(100);
+Base b = new Base();
+D d = new D();
+IDoable ib = new Base();
+IDoable id = new D();
 
-Console.WriteLine($"Name: {_base.Name}");
-Console.WriteLine($"Second Name: {_base.SecondName}");
-Console.WriteLine($"Age: {_base.Age}");
-Console.WriteLine($"const: {Base._const}");
 
-Console.WriteLine(new Base(1000).Age);
+//b.Hello();
+//d.Hello();
+
+//ib.Hello();
+//id.Hello(); 
+
+Console.WriteLine(d is IDoable);
+Console.WriteLine(b is IDoable);
+
+Console.WriteLine(id is Base);
