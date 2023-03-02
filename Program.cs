@@ -8,9 +8,12 @@ int _value;
 Test test = new Test();
 test.SetValue(10);
 int value = test.GetValue();
+int year = Test.year;
 
 Console.WriteLine(test.Age);
 Console.WriteLine(value);
+Console.WriteLine(year);
+
 void InModifierTest(in int age) {
     //age += 1;
     Console.WriteLine($"{age}");
@@ -26,12 +29,13 @@ void OutModifierTest(out int _value) {
     Console.WriteLine($"{_value}");
 }
 
-public class Test {
+class Test {
     private readonly int _age;
+    // Static variable that must be initialized at run time.
     private static int _value;
-
-    public Test() {
-        _age = 10;
+    public static int year;
+    static Test() {
+        year = DateTime.Now.Year;
     }
 
     public int Age {
