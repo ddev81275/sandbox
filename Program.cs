@@ -1,13 +1,21 @@
-﻿var values = new int[] { 1, 2, 3, 4, 5 };
+﻿var baseClass = new BaseClass();
+var delivered = new Delivered();
+BaseClass _d = new Delivered();
 
-Parallel.ForEach(values, value => {
-    if (value % 2 == 0) {
-        Console.WriteLine(value);
+
+
+baseClass.Say();
+Console.WriteLine(delivered.Say());
+_d.Say();
+
+public class BaseClass {
+    public virtual void Say() {
+        Console.WriteLine("Say from Base");
     }
-});
-Console.WriteLine("---------------------");
-Parallel.ForEach(values, value => {
-    if (value % 2 == 1) {
-        Console.WriteLine(value);
+}
+
+public class Delivered : BaseClass {
+    public new int Say() {
+        return 0;
     }
-});
+}
